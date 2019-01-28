@@ -30,8 +30,8 @@ Write a test that verifies the negative scenario of attempted to call swap mater
 Write two or more playmode tests verifying the behavior of the ball control over time.
 * When initializing the ball control, set the Force and SecondsForceApplied values.
 * Yield the WaitForSeconds and WaitForFixedUpdate commands to elapse time.
-* Evaluate on the transform.position of the ball
-* You can use the UnitySetUpAttribute or SetUpAttribute to create a common setup method
+* Evaluate on the transform.position of the ball.
+* You can use the UnitySetUpAttribute or SetUpAttribute to create a common setup method.
 
 ## Exercise 5 - MonoBehaviorTest
 
