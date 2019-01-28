@@ -27,9 +27,10 @@ public class BallControl : MonoBehaviour
 
     public void SwapMaterial()
     {
-        if (Materials.Length == 0)
+        if (Materials == null || Materials.Length == 0)
         {
             Debug.LogError("No materials available for swapping.");
+            return;
         }
         
         materialIndex++;
