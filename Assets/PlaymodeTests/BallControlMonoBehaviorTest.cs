@@ -3,7 +3,7 @@ using UnityEngine.TestTools;
 using NUnit.Framework;
 using System.Collections;
 
-public class BallControlModelBehaviorTest
+public class BallControlMonoBehaviorTest
 {
     [UnityTest]
     public IEnumerator TestBallControlUpdate() {
