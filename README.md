@@ -1,4 +1,6 @@
-# test-framework-training
+# Test Framework Training
+An example solution for the tests are available at the test-solution branch https://github.com/Unity-Technologies/test-framework-training/tree/test-solution
+
 ## Exercise 1 - Scene content
 
 Write an EditMode test that verifies the content of the ball scene.
@@ -16,7 +18,14 @@ Write a test that verifies the functionality of SwapMaterial on the ball control
 * To create material use new Material(Shader.Find("Specular"));
 * In EditMode you can use renderer.sharedMaterial to inspect the current material.
 
-## Exercise 3 - Applied force
+## Exercise 3 - Swap materials error
+
+Write a test that verifies the negative scenario of attempted to call swap material, when there are no materials assigned.
+* Set up a ball control in the same way as exercise 2, but do not set up the materials.
+* You can use LogAssert.Expect to let the test expect the error "No materials available for swapping."
+* Consider moving common code for setting up the test object into method with the [Setup] attribute, to share it between the two tests.
+
+## Exercise 4 - Applied force
 
 Write two or more playmode tests verifying the behavior of the ball control over time.
 * When initializing the ball control, set the Force and SecondsForceApplied values.
@@ -24,7 +33,7 @@ Write two or more playmode tests verifying the behavior of the ball control over
 * Evaluate on the transform.position of the ball
 * You can use the UnitySetUpAttribute or SetUpAttribute to create a common setup method
 
-## Exercise 4 - MonoBehaviorTest
+## Exercise 5 - MonoBehaviorTest
 
 Make a MonoBehaviorTest for the ball control that verifies the position after force is no longer applied.
 * Create an testable extension of BallControl and let that implement IMonoBehaviourTest. E.g. BallControlTestable
