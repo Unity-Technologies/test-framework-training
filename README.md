@@ -2,17 +2,18 @@
 ## Exercise 1 - Scene content
 
 Write an EditMode test that verifies the content of the ball scene.
-* Load the scene
-* Enter into Playmode
+* Load the scene.
+* Enter into Playmode.
 * Verify the ball is there.
-* Verify that the ball has the ball control
+* Verify that the ball has the BallControl script assigned to it.
 
 ## Exercise 2 - Swap materials
 
 Write a test that verifies the functionality of SwapMaterial on the ball control.
-* To interact with the ball control, it needs to be assigned to a game object
-* The game object will need a renderer
+* To interact with the ball control, it needs to be assigned to a game object.
+* The game object will need a renderer (you can create object using GameObject.CreatePrimitive).
 * The SwapMaterial method interacts with an array of Materials on the ball control.
+* To create material use new Material(Shader.Find("Specular"));
 * In EditMode you can use renderer.sharedMaterial to inspect the current material.
 
 ## Exercise 3 - Applied force
