@@ -38,6 +38,6 @@ Write two or more playmode tests verifying the behavior of the ball control over
 Make a MonoBehaviorTest for the ball control that verifies the position after force is no longer applied.
 * Create an testable extension of BallControl and let that implement IMonoBehaviourTest. E.g. BallControlTestable
 * Use the IsTestFinished to control when the test should stop sending updates on the control.
-* In a unity test create a new MonoBehaviorTest<BallControlTestable> and yield that object, once it is set up.
+* In a unity test create a new MonoBehaviourTest<BallControlTestable> and yield that object, once it is set up.
 * After yielding the monoBehaviorTest, you can verify the position
 * You can use GameObject.Find("MonoBehaviourTest: " + typeof(BallControlTestable).FullName); to find the gameObject that has the ball control.
